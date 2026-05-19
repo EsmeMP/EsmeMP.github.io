@@ -4,23 +4,23 @@
   --color-background: #f0f0f0;
   --color-foreground: #333333;
 
-  --color-card: #ffffff;
+  --color-card: #932840;
 
   --color-primary: #1e90ff;
-  --color-primary-foreground: #ffffff;
+  --color-primary-foreground: #f32323;
 
   --color-secondary: #ff69b4;
-  --color-secondary-foreground: #ffffff;
+  --color-secondary-foreground: #f90900;
 
   --color-muted: #888888;
-  --color-muted-foreground: #ffffff;
+  --color-muted-foreground: #908090;
 
   --color-border: #cccccc;
 
   --radious: 0.75rem;
 
   --color-highlight: #ffeb3b;
-  --color-surface: #ffffff;
+  --color-surface: #829302;
 }
 
 @layer base {
@@ -36,5 +36,13 @@
 
   .font-serif{
     font-family:"Playfair Display", serif;
+  }
+}
+
+@layer components {
+  .glass {
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in, srgb, var(--color-border) 50%, transparent);
   }
 }
