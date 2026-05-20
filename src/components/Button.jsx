@@ -1,4 +1,4 @@
-export const Button = ({className, size = "default", children}) => {
+export const Button = ({className = "", size = "default", children}) => {
     const baseClasses = "relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25";
 
     const sizeClasses = {
@@ -7,7 +7,7 @@ export const Button = ({className, size = "default", children}) => {
         lg: "px-8 py-4 text-lg",
     };
 
-    const classes = `${baseClasses} ${sizeClasses[size]}`;
+    const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
     return (
         <button className={classes}>
             <span className="relative flex items-center justify-center gap-2">{children}</span>
