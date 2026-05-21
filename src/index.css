@@ -28,14 +28,18 @@
     scroll-behavior: smooth;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
-  .font-serif{
-    font-family:"Playfair Display", serif;
+  .font-serif {
+    font-family: "Playfair Display", serif;
   }
 }
 
@@ -43,27 +47,28 @@
   .glass {
     background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);
-    border: 1px solid color-mix(in, srgb, var(--color-border) 50%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
   }
 
   .glass-strong {
     background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
     backdrop-filter: blur(24px);
-    border: 1px solid color-mix(in, srgb, var(--color-border) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
   }
-  .glow-text{
+
+  .glow-text {
     text-shadow: 0 0 30px
-    color-mix(in srgb, var(--color-primary) 50%, transparent);
+      color-mix(in srgb, var(--color-primary) 50%, transparent);
   }
 
-  .glow-border{
-    box-shadow: 0 0 30px
-    color-mix(in srgb, var(--color-primary) 50%, transparent);
+  .glow-border {
+    box-shadow: 0 0 20px
+        color-mix(in srgb, var(--color-primary) 20%, transparent),
+      inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
-
 }
 
-@layer utilities{
+@layer utilities {
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -71,12 +76,13 @@
       filter: blur(10px);
     }
     to {
-      opacity: 1; 
+      opacity: 1;
       transform: translateY(0);
       filter: blur(0);
     }
   }
-   @keyframes slow-drift {
+
+  @keyframes slow-drift {
     0%,
     100% {
       transform: translate(0, 0);
@@ -88,18 +94,26 @@
       transform: translate(-15px, -20px);
     }
     75% {
-      transform: translate(-30px, 10px);
+      transform: translate(30px, 10px);
     }
-
   }
 
-  @keyframes float{
+  @keyframes float {
     0%,
-    100%{
+    100% {
       transform: translateY(0);
     }
-    50%{
+    50% {
       transform: translateY(-10px);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
     }
   }
 
@@ -107,39 +121,39 @@
     animation: fade-in 0.8s ease-out both;
   }
 
-  .animate-fade-in{
-    animation: fade-in 0.8s ease-out both;
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
   }
 
-  .animate-float{
-    animation: fade-in 0,8s ease-out both, float 4s ease-in-out infinite;
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
   }
 
-  .animate-delay-100{
+  .animation-delay-100 {
     animation-delay: 100ms;
   }
 
-  .animate-delay-200{
+  .animation-delay-200 {
     animation-delay: 200ms;
   }
 
-  .animate-delay-300{
+  .animation-delay-300 {
     animation-delay: 300ms;
   }
 
-  .animate-delay-400{
+  .animation-delay-400 {
     animation-delay: 400ms;
   }
 
-  .animate-delay-500{
+  .animation-delay-500 {
     animation-delay: 500ms;
   }
 
-  .animate-delay-600{
+  .animation-delay-600 {
     animation-delay: 600ms;
   }
 
-  .animate-delay-800{
+  .animation-delay-800 {
     animation-delay: 800ms;
   }
 
@@ -152,7 +166,7 @@
     }
   }
 
-  .group:hover .animated-border-path{
+  .group:hover .animated-border-path {
     animation: animated-border 1.5s linear infinite;
   }
 
@@ -160,5 +174,11 @@
     background-color: color-mix(in srgb, #26c4b8 15%, transparent);
     backdrop-filter: blur(16px);
     box-shadow: 0 0 20px color-mix(in srgb, #26c4b8 20%, transparent);
+  }
+
+  .timeline-glow {
+    box-shadow: 0 0 40px
+        color-mix(in srgb, var(--color-primary) 35%, transparent),
+      0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
   }
 }
