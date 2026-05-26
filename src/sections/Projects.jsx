@@ -6,7 +6,7 @@ const projects = [
     title: "Fintech Dashboard",
     description:
       "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
+    image: "/projects/Gladiators.png",
     tags: ["React", "Typescript", "NodeJS"],
     link: "#",
   },
@@ -14,7 +14,7 @@ const projects = [
     title: "E-Commerce Platform",
     description:
       "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
+    image: "/projects/Nominas.png",
     tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
     link: "#",
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "AI Writing Assistant",
     description:
       "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
+    image: "/projects/LightStep.png",
     tags: ["React", "OpenAI", "Python", "FastAPI"],
     link: "#",
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "Project Management Tool",
     description:
       "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
+    image: "/projects/RealTime.png",
     tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
     link: "#",
   },
@@ -83,7 +83,7 @@ export const Projects = () => {
                 <div
                   className="absolute inset-0 
                   bg-gradient-to-t from-card via-card/50
-                  to-transparent opacity-60"
+                  to-transparent opacity-30"
                 />
 
                 {/* Overlay Link */}

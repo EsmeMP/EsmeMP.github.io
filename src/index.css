@@ -1,31 +1,34 @@
 @import "tailwindcss"; 
 
 @theme {
-  --color-background: #000;
-  --color-foreground: #333333;
+  --color-background: #080a0d;
+  --color-foreground: #FF8DE2;
 
-  --color-card: #932840;
+  --color-card: #141a22;
 
-  --color-primary: #1e90ff;
-  --color-primary-foreground: #f32323;
+  --color-primary: #BF0D95;
+  --color-primary-foreground: #fde8f2;
 
-  --color-secondary: #ff69b4;
-  --color-secondary-foreground: #f90900;
+  --color-secondary: #FBE6FF;
+  --color-secondary-foreground: #fde8f2;
 
-  --color-muted: #888888;
-  --color-muted-foreground: #908090;
+  --color-muted: #1e2836;
+  --color-muted-foreground: #7b90a8;
 
-  --color-border: #cccccc;
+  --color-border: #1e283680;
 
   --radious: 0.75rem;
 
-  --color-highlight: #ffeb3b;
-  --color-surface: #829302;
+  --color-highlight: #38bdf8;
+  --color-surface: #0f1520;
 }
+
+
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    background-color: #ac3f6c8e;
   }
 
   button {
