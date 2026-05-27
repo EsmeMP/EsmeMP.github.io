@@ -1,39 +1,67 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2024 — Presente",
+    role: "Desarrolladora Full Stack Junior",
+    company: "Proyectos Académicos y Personales",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Desarrollo de aplicaciones web y sistemas completos integrando frontend, backend y bases de datos. Participación en proyectos relacionados con automatización, tiempo real e IoT.",
+    technologies: [
+      "Python",
+      "Flask",
+      "PostgreSQL",
+      "JavaScript",
+      "Bootstrap",
+      "Docker",
+    ],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "2024 — Presente",
+    role: "Desarrolladora IoT & Mobile",
+    company: "LightStep",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Desarrollo de un ecosistema inteligente de iluminación conectado a Firebase en tiempo real, integrando Flutter, ESP32, sensores y tiras LED programables.",
+    technologies: [
+      "Flutter",
+      "Firebase",
+      "ESP32",
+      "Arduino",
+      "IoT",
+      "Neopixel",
+    ],
+    current: true,
+  },
+  {
+    period: "2023 — Presente",
+    role: "Desarrolladora Backend",
+    company: "Sistemas de Gestión Empresarial",
+    description:
+      "Implementación de módulos administrativos como nóminas, asistencias, autenticación y manejo de datos utilizando tecnologías web y bases de datos relacionales.",
+    technologies: [
+      "PHP",
+      "JWT",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "2025 — Presente",
+    role: "Exploración en IA y Visión Artificial",
+    company: "RealTimeSimulator / GestBactAI",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
-  },
-  {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
-    current: false,
+      "Desarrollo de simulaciones y proyectos experimentales utilizando visión artificial, análisis de datos y visualización gráfica para estudiar comportamientos en tiempo real.",
+    technologies: [
+      "Python",
+      "MediaPipe",
+      "NumPy",
+      "Matplotlib",
+      "Pygame",
+      "Machine Learning",
+    ],
+    current: true,
   },
 ];
 

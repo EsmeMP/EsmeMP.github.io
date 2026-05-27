@@ -3,35 +3,49 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Gladiator's POS",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "Sistema de punto de venta para una tienda de accesorios, con gestión de inventario, ventas, empleados y generación de reportes.",
     image: "/projects/Gladiators.png",
-    tags: ["React", "Typescript", "NodeJS"],
+    tags: ["Flask", "PostgreSQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
     link: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Módulos de Nóminas y Asistencias",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "Plataforma para la gestión de nóminas y registro de asistencias de empleados, incluyendo autenticación segura y administración de información empresarial.",
     image: "/projects/Nominas.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["PHP", "JWT", "Bootstrap", "HTML", "CSS", "JavaScript"],
     link: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "LightStep",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "Ecosistema inteligente de iluminación compuesto por una plataforma web, aplicación móvil y un prototipo IoT. Permite controlar efectos, colores, duración y encendido de luces LED en tiempo real mediante Firebase.",
     image: "/projects/LightStep.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    tags: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "ESP32",
+      "Arduino",
+      "IoT",
+    ],
     link: "#",
   },
   {
-    title: "Project Management Tool",
+    title: "RealTimeSimulator",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "Conjunto de proyectos enfocados en visión artificial y simulación en tiempo real. GestBact AI - Simulación que utiliza reconocimiento de manos para controlar variables relacionadas con el crecimiento de bacterias y visualizar el comportamiento poblacional mediante gráficas.",
     image: "/projects/RealTime.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+    tags: [
+      "Python",
+      "MediaPipe",
+      "NumPy",
+      "Matplotlib",
+      "Pygame",
+      "Computer Vision",
+    ],
     link: "#",
   },
 ];
@@ -47,20 +61,20 @@ export const Projects = () => {
         {/* Section Header */}
         <div className="text-center mx-auto max-w-3xl mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Featured Work
+            Mis Proyectos
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Projects that
+            Un poco
             <span className="font-serif italic font-normal text-white">
               {" "}
-              make an impact.
+              de mi trabajo
             </span>
           </h2>
 
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A selection of my recent work, from complex web applications to
-            innovative tools that solve real-world problems.
+            Una selección de proyectos reales, desde sistemas de gestión empresarial
+            hasta ecosistemas IoT y simulaciones con visión artificial.
           </p>
         </div>
 

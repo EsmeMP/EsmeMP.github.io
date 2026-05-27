@@ -1,28 +1,28 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { BrainCircuit, ChessKnight, Workflow, Telescope, } from "lucide-react";
 
 const highlights = [
   {
-    icon: Code2,
-    title: "Clean Code",
+    icon: BrainCircuit,
+    title: "Innovación",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Exploro nuevas tecnologías y formas de crear sistemas más inteligentes e interactivos.",
   },
   {
-    icon: Rocket,
-    title: "Performance",
+    icon: ChessKnight,
+    title: "IA & ML",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Apasionada por la inteligencia artificial, machine learning y su potencial para transformar el mundo.",
   },
   {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    icon: Workflow,
+    title: "Colaboración",
+    description: "Trabajo en equipo para transformar ideas en productos reales.",
   },
   {
-    icon: Lightbulb,
-    title: "Innovation",
+    icon: Telescope,
+    title: "Curiosidad",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Siempre aprendiendo: IA, web, móvil, IoT, bases de datos... el stack completo.",
   },
 ];
 
@@ -35,44 +35,45 @@ export const About = () => {
           <div className="space-y-8">
             <div className="animate-fade-in">
               <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
-                About Me
+                Sobre mí
               </span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Construyendo el futuro de la tecnología,
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                una línea a la vez.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                Soy estudiante de Ingeniería en Software, próxima a egresar, con
+                una fuerte inclinación hacia la Inteligencia Artificial (
+                Machine Learning, Deep Learning y Agentes de IA). Mi curiosidad por entender
+                cómo funcionan las cosas me ha llevado a explorar tecnologías
+                muy diversas.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                A lo largo de mi formación he trabajado con Python, JavaScript,
+                Java, PHP, Flutter, bases de datos relacionales y no relacionales,
+                contenedores con Docker, IoT, y más. Me
+                adapto rápido a nuevos entornos y disfruto aprender en el camino.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Fuera del código disfruto leer, cuidar plantas y pasar tiempo con mis mascotas.
+                También me interesa aprender piano, jugar ajedrez y explorar nuevas ideas,
+                tanto en tecnología como en la vida diaria. Siempre estoy abierta a
+                oportunidades que me reten a seguir creciendo.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "Quiero construir tecnología que resuelva problemas reales —
+                soluciones que sean inteligentes, accesibles y que la gente
+                disfrute usar."
               </p>
             </div>
           </div>

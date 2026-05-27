@@ -8,24 +8,29 @@ import {
 import { AnimatedBorderButton } from '../components/AnimatedBorderButton';
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Git",
-  "GitHub Actions",
+    "",
+    "Linux ♡",
+    "Python",
+    "PHP",
+    "JavaScript",
+    "Java",
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Firebase Realtime Database",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Tailwind CSS",
+    "Flutter",
+    "ESP32",
+    "Arduino",
+    "Git",
+    "GitHub",
+    "Docker",
+    "JWT",
+    "",
+    "",
 ];
 
 export const Hero = () => {
@@ -60,40 +65,41 @@ export const Hero = () => {
                     <div className="animate-fade-in">
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                             <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/>
-                            Software engineer React Specialist
+                            Ingeniería en Desarrollo Software · Machine Learning - Data Science - UI/UX 
                         </span>
                     </div>
 
                     {/* Headline */}
                     <div className="space-y-4">
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                            Crafting <span className="text-primary glow-text">digital</span>
+                            Construyendo <span className="text-primary glow-text">soluciones</span>
                             <br />
-                            experiences with
+                            inteligentes con
                             <br />
                             <span className="font-serif italic font-normal text-white">
-                                precision.
+                                propósito.
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animate-delay-200">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci saepe vero explicabo, reprehenderit ipsum beatae esse illum amet culpa cupiditate consectetur, tempora facere ipsa. Placeat, tenetur! Est quidem quis vero?
+                            Estudiante de Ingeniería en Software 🎔 <br />
+                            Apasionada por la Inteligencia Artificial, Machine Learning, con curiosidad abierta hacia el desarrollo web, móvil y todo lo que el código puede crear.
                         </p>
                     </div>
 
                     {/* CTAs */}
                     <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                         <Button size="lg">
-                            Contact Me :3 <ArrowRight className="w-5 h-5"/>
+                            Contáctame :3 <ArrowRight className="w-5 h-5"/>
                         </Button>
                         <AnimatedBorderButton>
                             <Download className="w-5 h-5" />
-                            Download CV
+                            Descargar CV
                         </AnimatedBorderButton>
                     </div>
 
                     {/* Social links */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                        <span className="text-sm text-muted-foreground">Follow me:</span>
+                        <span className="text-sm text-muted-foreground">Redes Sociales:</span>
                         {[
                             { icon: Circle, href: "#" },
                             { icon: Circle, href: "#" },
@@ -120,15 +126,15 @@ export const Hero = () => {
                             {/* Floating badge */}
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                                 <div className='flex items-center gap-3'>
-                                    <div className='w-3 h-3 bg-green-500 rounded-full animate-pulse'/>
-                                    <span className='text-sm font-medium'>Available for work</span>
+                                    <div className='w-3 h-3 bg-pink-600 rounded-full animate-pulse'/>
+                                    <span className='text-sm font-medium'>Disponible para trabajar</span>
                                 </div>
                             </div>
                             {/* Stats badge */}
                             <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                                <div className="text-2xl font-bold text-primary">5+</div>
+                                <div className="text-2xl font-bold text-primary">+0.4</div>
                                 <div className="text-xs text-muted-foreground">
-                                    Years Exp.
+                                    Years
                                 </div>
                             </div>
                         </div>
@@ -138,7 +144,7 @@ export const Hero = () => {
             {/* Skills Section */}
             <div className="mt-20 animate-fade-in animation-delay-600">
             <p className="text-sm text-muted-foreground mb-6 text-center">
-                Technologies I work with
+                Tecnologías con las que trabajo
             </p>
             <div className="relative overflow-hidden">
                 <div
