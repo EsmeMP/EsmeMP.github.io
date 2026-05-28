@@ -38,7 +38,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* BG */}
         <div className="absolute inset-0">
-            <img src="/public/backg.webp" alt="Hero img" className="w-full h-full opacity-40" />
+            <img src="/public/beach.gif" alt="Hero img" className="w-full h-full opacity-15" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/20 to-background"/>
         </div>
 
@@ -121,7 +121,7 @@ export const Hero = () => {
                         from-primary/30 via-transparent
                         to-primary/10 blur-2xl animate-pulse--glow'/>
                         <div className='relative glass rounded-3xl p-2 glow-border'>
-                            <img src="/public/profile_photo.png" alt="Esme Munoz" className="w-full aspect-[4/5] object-cover rounded-2xl" />
+                            <img src="/public/girl.gif" alt="Esme Munoz" className="w-full aspect-[4/5] object-cover rounded-2xl" />
 
                             {/* Floating badge */}
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">

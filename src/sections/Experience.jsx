@@ -1,42 +1,41 @@
 const experiences = [
   {
-    period: "2024 — Presente",
-    role: "Desarrolladora Full Stack Junior",
-    company: "Proyectos Académicos y Personales",
+    period: "Mayo - Agosto  2024",
+    role: "Desarrollador Backend",
+    company: "KEEL / Proyecto Académico ",
     description:
-      "Desarrollo de aplicaciones web y sistemas completos integrando frontend, backend y bases de datos. Participación en proyectos relacionados con automatización, tiempo real e IoT.",
+      "Desarrollo de aplicacion web (POS), sistema completo integrando frontend, backend y bases de datos.",
     technologies: [
       "Python",
       "Flask",
       "PostgreSQL",
       "JavaScript",
       "Bootstrap",
-      "Docker",
     ],
     current: true,
   },
   {
-    period: "2024 — Presente",
-    role: "Desarrolladora IoT & Mobile",
-    company: "LightStep",
+    period: "Enero - Abril 2025",
+    role: "Desarrollador IoT, Mobile & Web",
+    company: "KEEL / LightStep",
     description:
-      "Desarrollo de un ecosistema inteligente de iluminación conectado a Firebase en tiempo real, integrando Flutter, ESP32, sensores y tiras LED programables.",
+      "Desarrollo de un ecosistema inteligente de iluminación inteligente con detección de movimiento, conectado a Firebase en tiempo real, integrando Flutter, ESP32, sensores y tiras LED programables.",
     technologies: [
       "Flutter",
       "Firebase",
       "ESP32",
       "Arduino",
       "IoT",
-      "Neopixel",
+      "Django",
     ],
     current: true,
   },
   {
-    period: "2023 — Presente",
-    role: "Desarrolladora Backend",
-    company: "Sistemas de Gestión Empresarial",
+    period: "Mayo - Agosto 2025",
+    role: "Desarrollador Backend",
+    company: "AIZU INC / Módulos de Nóminas, Asistencias & Penalizaciones",
     description:
-      "Implementación de módulos administrativos como nóminas, asistencias, autenticación y manejo de datos utilizando tecnologías web y bases de datos relacionales.",
+      "Implementación de módulos administrativos como nóminas, asistencias, penalizaciones y manejo de datos utilizando tecnologías web y bases de datos relacionales (Proyecto de estadías profesionales).",
     technologies: [
       "PHP",
       "JWT",
@@ -44,13 +43,14 @@ const experiences = [
       "HTML",
       "CSS",
       "JavaScript",
+      "Bootstrap",
     ],
     current: false,
   },
   {
-    period: "2025 — Presente",
+    period: "Abril 2026",
     role: "Exploración en IA y Visión Artificial",
-    company: "RealTimeSimulator / GestBactAI",
+    company: "EEK / RealTimeSimulator (GestBactAI)",
     description:
       "Desarrollo de simulaciones y proyectos experimentales utilizando visión artificial, análisis de datos y visualización gráfica para estudiar comportamientos en tiempo real.",
     technologies: [

@@ -30,6 +30,7 @@ const projects = [
       "ESP32",
       "Arduino",
       "IoT",
+      "Django",
     ],
     link: "#",
   },
