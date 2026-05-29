@@ -38,7 +38,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* BG */}
         <div className="absolute inset-0">
-            <img src="/public/beach.gif" alt="Hero img" className="w-full h-full opacity-15" />
+            <img src="/public/beach.gif" alt="Hero img" className="w-full h-full opacity-10" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/20 to-background"/>
         </div>
 
