@@ -3,10 +3,10 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-    {href: '#about', label: 'About'},
-    {href: '#projects', label: 'Projects'},
-    {href: '#experience', label: 'Experience'},
-    {href: '#certificates', label: 'Certificates'},
+    {href: '#about', label: 'Sobre Mí'},
+    {href: '#projects', label: 'Proyectos'},
+    {href: '#experience', label: 'Experiencia'},
+    {href: '#certificates', label: 'Certificados'},
     // {href: '#contact', label: 'Contact'},
 ];
 
@@ -32,7 +32,7 @@ export const Navbar = () => {
 
                 {/* CTA BUTTON */}
                 <div className="hidden md:block">
-                    <Button size="sm">Contact Me :3</Button>
+                    <Button size="lg">Contáctame :3</Button>
                 </div>
 
                 {/* mobile menu button */}
@@ -51,7 +51,7 @@ export const Navbar = () => {
                                 </a>
                             ))}
 
-                            <Button>Contact Me :3</Button>
+                            <Button>Contáctame :3</Button>
                     </div>
                 </div>
             )}

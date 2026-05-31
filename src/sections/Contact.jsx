@@ -13,21 +13,21 @@ import emailjs from "@emailjs/browser";
 const contactInfo = [
   {
     icon: Mail,
-    label: "Email",
+    label: "Correo Electrónico",
     value: "munoz.pad.esme.04@gmail.com",
-    href: "mailto:meme@example.com",
+    href: "https://mail.google.com/mail/?view=cm&to=munoz.pad.esme.04@gmail.com",
   },
   {
     icon: Phone,
-    label: "Phone",
-    value: "+1 039 123-4567",
-    href: "tel:+15551234567",
+    label: "Teléfono",
+    value: "+52 246 222 9873",
+    href: "tel:+522462229873",
   },
   {
     icon: MapPin,
-    label: "Location",
-    value: "Mexico City, Mexico",
-    href: "#",
+    label: "Localización",
+    value: "Tlaxcala, México",
+    href: "https://maps.app.goo.gl/MAA9Zyjs2oEdTw2c6",
   },
 ];
 
@@ -97,17 +97,17 @@ export const Contact = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Get In Touch
+            Contacto
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Let's build{" "}
+            Construyamos{" "}
             <span className="font-serif italic font-normal text-white">
-              something great.
+              algo juntos.
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            Have a project in mind? I'd love to hear about it. Send me a message
-            and let's discuss how we can work together.
+            ¿Tienes un proyecto en mente? Me encantaría escucharlo. Envíame un
+            mensaje y platicamos cómo podemos trabajar juntos.
           </p>
         </div>
 
@@ -119,13 +119,13 @@ export const Contact = () => {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  Name
+                  Nombre
                 </label>
                 <input
                   id="name"
                   type="text"
                   required
-                  placeholder="Your name..."
+                  placeholder="Tu nombre..."
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -140,11 +140,11 @@ export const Contact = () => {
                   type="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  Email
+                  Correo Electrónico
                 </label>
                 <input
                   required
-                  placeholder="your@email.com"
+                  placeholder="tu@correoElectronico.com"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -158,7 +158,7 @@ export const Contact = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  Message
+                  Mensaje
                 </label>
                 <textarea
                   rows={5}
@@ -167,7 +167,7 @@ export const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  placeholder="Your message..."
+                  placeholder="Tu mensaje..."
                   className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
                 />
               </div>
@@ -179,10 +179,10 @@ export const Contact = () => {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  <>Sending...</>
+                  <>Enviando...</>
                 ) : (
                   <>
-                    Send Message
+                    Enviar Mensaje
                     <Send className="w-5 h-5" />
                   </>
                 )}
@@ -212,7 +212,7 @@ export const Contact = () => {
           <div className="space-y-6 animate-fade-in animation-delay-400">
             <div className="glass rounded-3xl p-8">
               <h3 className="text-xl font-semibold mb-6">
-                Contact Information
+                Información de Contacto
               </h3>
               <div className="space-y-4">
                 {contactInfo.map((item, i) => (
@@ -239,12 +239,12 @@ export const Contact = () => {
             <div className="glass rounded-3xl p-8 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="font-medium">Currently Available</span>
+                <span className="font-medium">Actualmente Disponible</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                Estoy abierta a nuevas oportunidades y proyectos interesantes.
+                Ya sea una posición de tiempo completo, prácticas profesionales
+                o colaboración en algún proyecto, ¡con gusto platicamos!
               </p>
             </div>
           </div>

@@ -3,39 +3,25 @@ import { useState } from "react";
 
 const certificates = [
   {
-    title: "AI Fundamentals",
-    issuer: "Coursera",
-    date: "Mayo 2026",
-    category: "IA & ML",
-    link: "https://www.coursera.org/verify/AZKLGDT8Y29R",
-  },
-  {
-    title: "Fundamentos de Machine Learning",
+    title: "Git y GitHub",
     issuer: "Platzi",
-    date: "Noviembre 2025",
-    category: "IA & ML",
-    link: "../../public/certificates/MachineLearning.pdf",
+    date: "Noviembre 2024",
+    category: "Dev Tools",
+    link: "../../public/certificates/Git&GitHub.pdf",
   },
   {
-    title: "Regresión Lineal con Python y Scikit-Learn",
-    issuer: "Platzi",
-    date: "Diciembre 2025",
-    category: "IA & ML",
-    link: "../../public/certificates/RegresionLineal.pdf",
+    title: "Introduction to Python",
+    issuer: "SoloLearn",
+    date: "Enero 2025",
+    category: "Python",
+    link: "../../public/certificates/IntroductionPython.pdf",
   },
   {
-    title: "Python para Ciencia de Datos",
-    issuer: "Platzi",
-    date: "Noviembre 2025",
-    category: "IA & ML",
-    link: "../../public/certificates/PythonDataScience.pdf",
-  },
-  {
-    title: "Introduction to Data Science",
-    issuer: "Santander",
-    date: "Noviembre 2025",
-    category: "IA & ML",
-    link: "../../public/certificates/DataScience.pdf",
+    title: "Python Developer",
+    issuer: "SoloLearn",
+    date: "Abril 2025",
+    category: "Python",
+    link: "../../public/certificates/PythonDeveloper.pdf",
   },
   {
     title: "Azure e Inteligencia Artificial",
@@ -52,18 +38,32 @@ const certificates = [
     link: "../../public/certificates/Python&cursor.pdf",
   },
   {
-    title: "Python Developer",
-    issuer: "SoloLearn",
-    date: "Abril 2025",
-    category: "Python",
-    link: "../../public/certificates/PythonDeveloper.pdf",
+    title: "Python para Ciencia de Datos",
+    issuer: "Platzi",
+    date: "Noviembre 2025",
+    category: "IA & ML",
+    link: "https://platzi.com/p/munoz.pad.esme.04/curso/10365-python-data-science/diploma/detalle/",
   },
   {
-    title: "Introduction to Python",
-    issuer: "SoloLearn",
-    date: "Enero 2025",
-    category: "Python",
-    link: "../../public/certificates/IntroductionPython.pdf",
+    title: "Introduction to Data Science",
+    issuer: "Santander",
+    date: "Noviembre 2025",
+    category: "IA & ML",
+    link: "../../public/certificates/DataScience.pdf",
+  },
+  {
+    title: "Fundamentos de Machine Learning",
+    issuer: "Platzi",
+    date: "Noviembre 2025",
+    category: "IA & ML",
+    link: "https://platzi.com/p/munoz.pad.esme.04/curso/12138-machine-learning/diploma/detalle/",
+  },
+  {
+    title: "Regresión Lineal con Python y Scikit-Learn",
+    issuer: "Platzi",
+    date: "Diciembre 2025",
+    category: "IA & ML",
+    link: "https://platzi.com/p/munoz.pad.esme.04/curso/2739-regresion-lineal/diploma/detalle/",
   },
   {
     title: "Responsible Prompting: Maximize AI in Your Business",
@@ -73,11 +73,11 @@ const certificates = [
     link: "../../public/certificates/ResponsiblePrompting.pdf",
   },
   {
-    title: "Git y GitHub",
-    issuer: "Platzi",
-    date: "Noviembre 2024",
-    category: "Dev Tools",
-    link: "../../public/certificates/Git&GitHub.pdf",
+    title: "AI Fundamentals",
+    issuer: "Coursera",
+    date: "Mayo 2026",
+    category: "IA & ML",
+    link: "https://www.coursera.org/verify/AZKLGDT8Y29R",
   },
   {
     title: "2do Congreso de Tecnología y Ciberseguridad",
@@ -144,7 +144,7 @@ export const Certificates = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in animation-delay-200">
+        {/* <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in animation-delay-200">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -158,7 +158,7 @@ export const Certificates = () => {
               {cat}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Certificates Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
