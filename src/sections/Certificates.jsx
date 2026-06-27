@@ -73,7 +73,7 @@ const certificates = [
     link: "/certificates/ResponsiblePrompting.pdf",
   },
   {
-    title: "AI Fundamentals",
+    title: "AI Deep Learning Projects with TensorFlow",
     issuer: "Coursera",
     date: "Mayo 2026",
     category: "IA & ML",
