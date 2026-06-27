@@ -7,14 +7,14 @@ const certificates = [
     issuer: "Platzi",
     date: "Noviembre 2024",
     category: "Dev Tools",
-    link: "../../public/certificates/Git&GitHub.pdf",
+    link: "/certificates/Git&GitHub.pdf",
   },
   {
     title: "Introduction to Python",
     issuer: "SoloLearn",
     date: "Enero 2025",
     category: "Python",
-    link: "../../public/certificates/IntroductionPython.pdf",
+    link: "/certificates/IntroductionPython.pdf",
   },
   {
     title: "Python Developer",
