@@ -5,9 +5,9 @@ import { useState } from "react";
 const navLinks = [
     {href: '#about', label: 'Sobre Mí'},
     {href: '#projects', label: 'Proyectos'},
-    {href: '#experience', label: 'Experiencia'},
+    // {href: '#experience', label: 'Experiencia'},
     {href: '#certificates', label: 'Certificados'},
-    // {href: '#contact', label: 'Contact'},
+    {href: '#contact', label: 'Contact'},X
 ];
 
 export const Navbar = () => {
