@@ -1,5 +1,3 @@
-import girl_img from "../assets/girl.gif";
-
 import {Button} from '@/components/Button';
 import {
   Download,
@@ -123,7 +121,7 @@ export const Hero = () => {
                         from-primary/30 via-transparent
                         to-primary/10 blur-2xl animate-pulse--glow'/>
                         <div className='relative glass rounded-3xl p-2 glow-border'>
-                            <img src={girl_img} alt="Esme Munoz" className="w-full aspect-[4/5] object-cover rounded-2xl" />
+                            <img src="/girl.gif" alt="Esme Munoz" className="w-full aspect-[4/5] object-cover rounded-2xl" />
 
                             {/* Floating badge */}
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">

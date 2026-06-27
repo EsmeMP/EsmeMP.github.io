@@ -21,21 +21,21 @@ const certificates = [
     issuer: "SoloLearn",
     date: "Abril 2025",
     category: "Python",
-    link: "../../public/certificates/PythonDeveloper.pdf",
+    link: "/certificates/PythonDeveloper.pdf",
   },
   {
     title: "Azure e Inteligencia Artificial",
     issuer: "Universidad",
     date: "Octubre 2025",
     category: "IA & ML",
-    link: "../../public/certificates/Azure.pdf",
+    link: "/certificates/Azure.pdf",
   },
   {
     title: "Python and Cursor: Smarter Development with AI",
     issuer: "Santander",
     date: "Octubre 2025",
     category: "Python",
-    link: "../../public/certificates/Python&cursor.pdf",
+    link: "/certificates/Python&cursor.pdf",
   },
   {
     title: "Python para Ciencia de Datos",
@@ -49,7 +49,7 @@ const certificates = [
     issuer: "Santander",
     date: "Noviembre 2025",
     category: "IA & ML",
-    link: "../../public/certificates/DataScience.pdf",
+    link: "/certificates/DataScience.pdf",
   },
   {
     title: "Fundamentos de Machine Learning",
@@ -70,21 +70,21 @@ const certificates = [
     issuer: "Santander",
     date: "Diciembre 2025",
     category: "IA & ML",
-    link: "../../public/certificates/ResponsiblePrompting.pdf",
+    link: "/certificates/ResponsiblePrompting.pdf",
   },
   {
     title: "AI Fundamentals",
     issuer: "Coursera",
     date: "Mayo 2026",
     category: "IA & ML",
-    link: "https://www.coursera.org/verify/AZKLGDT8Y29R",
+    link: "https://coursera.org/share/4f6de1c33881dbc13bb2cac1b7cd8b03",
   },
   {
     title: "2do Congreso de Tecnología y Ciberseguridad",
     issuer: "Universidad",
     date: "Octubre 2025",
     category: "Evento",
-    link: "../../public/certificates/SegundoCongreso.pdf",
+    link: "/certificates/SegundoCongreso.pdf",
   },
 ];
 
