@@ -8,7 +8,7 @@ const projects = [
       "Sistema de punto de venta para una tienda de accesorios, con gestión de inventario, ventas, empleados y generación de reportes.",
     image: "/projects/Gladiators.png",
     tags: ["Flask", "PostgreSQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "#",
+    link: "https://github.com/EsmeMP/gladiators_mine.git",
   },
   {
     title: "Módulos de Nóminas y Asistencias",
@@ -16,7 +16,7 @@ const projects = [
       "Plataforma para la gestión de nóminas y registro de asistencias de empleados, incluyendo autenticación segura y administración de información empresarial.",
     image: "/projects/Nominas.png",
     tags: ["PHP", "JWT", "Bootstrap", "HTML", "CSS", "JavaScript"],
-    link: "#",
+    link: "https://github.com/EsmeMP/Fundamentos_PHP.git",
   },
   {
     title: "LightStep",
@@ -32,7 +32,7 @@ const projects = [
       "IoT",
       "Django",
     ],
-    link: "#",
+    link: "https://github.com/EsmeMP/LightStep_Movil.git",
   },
   {
     title: "RealTimeSimulator",
@@ -47,15 +47,15 @@ const projects = [
       "Pygame",
       "Computer Vision",
     ],
-    link: "#",
+    link: "https://github.com/EsmeMP/Modelado-Simulacion_Sistemas_Dinamicos.git",
   },
 ];
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section className="py-32 relative overflow-hidden" id="projects">
       {/* Bg glows */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"/>
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -147,12 +147,12 @@ export const Projects = () => {
         </div>
 
         {/* View All CTA */}
-        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
           <AnimatedBorderButton>
             View All Projects
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -38,7 +38,7 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* BG */}
         <div className="absolute inset-0">
-            <img src="/public/beach.gif" alt="Hero img" className="w-full h-full opacity-10" />
+            <img src="/beach.gif" alt="Hero img" className="w-full h-full opacity-10" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/20 to-background"/>
         </div>
 
@@ -87,7 +87,7 @@ export const Hero = () => {
                     </div>
 
                     {/* CTAs */}
-                    <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+                    {/* <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                         <Button size="lg">
                             Contáctame :3 <ArrowRight className="w-5 h-5"/>
                         </Button>
@@ -95,10 +95,10 @@ export const Hero = () => {
                             <Download className="w-5 h-5" />
                             Descargar CV
                         </AnimatedBorderButton>
-                    </div>
+                    </div> */}
 
                     {/* Social links */}
-                    <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+                    {/* <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                         <span className="text-sm text-muted-foreground">Redes Sociales:</span>
                         {[
                             { icon: Circle, href: "#" },
@@ -109,7 +109,7 @@ export const Hero = () => {
                                 {<social.icon className="w-5 h-5"/>}
                             </a>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
                 {/* Right Column - Profile image */}
                 <div className="relative animate-fade-in animation-delay-300">
@@ -126,7 +126,7 @@ export const Hero = () => {
                             {/* Floating badge */}
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                                 <div className='flex items-center gap-3'>
-                                    <div className='w-3 h-3 bg-pink-600 rounded-full animate-pulse'/>
+                                    <div className='w-3 h-3 bg-white rounded-full animate-pulse'/>
                                     <span className='text-sm font-medium'>Disponible para trabajar</span>
                                 </div>
                             </div>

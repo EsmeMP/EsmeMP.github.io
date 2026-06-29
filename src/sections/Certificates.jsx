@@ -1,5 +1,6 @@
 import { ExternalLink, Award } from "lucide-react";
 import { useState } from "react";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const certificates = [
   {
@@ -73,6 +74,13 @@ const certificates = [
     link: "/certificates/ResponsiblePrompting.pdf",
   },
   {
+    title: "AI Fundamentals",
+    issuer: "Coursera",
+    date: "Mayo 2026",
+    category: "IA & ML",
+    link: "https://coursera.org/share/d91594cf868d9ea8e5d92dfb1db6187b",
+  },
+  {
     title: "AI Deep Learning Projects with TensorFlow",
     issuer: "Coursera",
     date: "Mayo 2026",
@@ -86,6 +94,7 @@ const certificates = [
     category: "Evento",
     link: "/certificates/SegundoCongreso.pdf",
   },
+
 ];
 
 const categories = ["Todos", "IA & ML", "Python", "Dev Tools", "Evento"];
@@ -112,12 +121,14 @@ const issuerLogos = {
 
 export const Certificates = () => {
   const [activeCategory, setActiveCategory] = useState("Todos");
+  const [showAll, setShowAll] = useState(false);
 
-  const filtered =
-    activeCategory === "Todos"
-      ? certificates
-      : certificates.filter((c) => c.category === activeCategory);
-
+  const filtered = activeCategory === "Todos"
+    ? certificates
+    : certificates.filter((c) => c.category === activeCategory);
+  
+  const displayed = showAll ? filtered : filtered.slice(0, 6);
+  
   return (
     <section id="certificates" className="py-32 relative overflow-hidden">
       <div
@@ -161,11 +172,14 @@ export const Certificates = () => {
         </div> */}
 
         {/* Certificates Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filtered.map((cert, idx) => (
-            <div
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 [&:hover>a]:brightness-50 [&:hover>a:hover]:brightness-100">
+          {displayed.map((cert, idx) => (
+            <a
               key={idx}
-              className="group glass rounded-2xl p-5 animate-fade-in flex flex-col gap-4 hover:glow-border transition-all duration-300"
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group glass rounded-2xl p-5 animate-fade-in flex flex-col gap-4 hover:glow-border hover:border-primary/40 hover:scale-[1.02] transition-all duration-300 cursor-pointer"
               style={{ animationDelay: `${idx * 60}ms` }}
             >
               {/* Top row */}
@@ -197,18 +211,25 @@ export const Certificates = () => {
                   alt={cert.issuer}
                   className="h-5 opacity-80"
                 />
-                <a
+                {/* <a
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-1.5 rounded-lg glass hover:bg-primary/10 hover:text-primary transition-all duration-300 opacity-60 group-hover:opacity-100"
                 >
                   <ExternalLink className="w-4 h-4" />
-                </a>
+                </a> */}
               </div>
-            </div>
+            </a>
           ))}
         </div>
+        {filtered.length > 6 && (
+          <div className="flex justify-center mt-10">
+            <AnimatedBorderButton onClick={() => setShowAll((prev) => !prev)}>
+              {showAll ? "Ver menos" : `Ver todos (${filtered.length})`}
+            </AnimatedBorderButton>
+          </div>
+        )}
       </div>
     </section>
   );

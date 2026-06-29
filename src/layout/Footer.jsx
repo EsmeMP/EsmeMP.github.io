@@ -2,7 +2,7 @@ const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contact", label: "Contacto" },
 ];
 
 export const Footer = () => {
@@ -15,7 +15,7 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              ~/<span className="text-primary">home/meme▍_</span>
+              meme@portfolio:~$<span className="text-muted-foreground"> cd Footer</span>
             </a>
 
             <p className="text-sm text-muted-foreground mt-2">
