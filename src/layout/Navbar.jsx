@@ -14,24 +14,26 @@ const useTypewriter = (text, speed = 50, delay = 2000) => {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    let i = 0;
-    setDisplayed("");
-    setDone(false);
-
-    const timeout = setTimeout(() => {
-      const interval = setInterval(() => {
+    let intervalId;
+    const timeoutId = setTimeout(() => {
+      let i = 0;
+      setDisplayed("");
+      setDone(false);
+      intervalId = setInterval(() => {
         i++;
         setDisplayed(text.slice(0, i));
         if (i >= text.length) {
-          clearInterval(interval);
+          clearInterval(intervalId);
           setDone(true);
         }
-      }, speed + Math.random() * 30);
-      return () => clearInterval(interval);
+      }, speed);
     }, delay);
 
-    return () => clearTimeout(timeout);
-  }, [text]);
+    return () => {
+      clearTimeout(timeoutId);
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [text, speed, delay]);
 
   return { displayed, done };
 };

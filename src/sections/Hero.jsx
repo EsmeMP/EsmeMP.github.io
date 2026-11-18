@@ -1,11 +1,11 @@
-import {Button} from '@/components/Button';
-import {
-  Download,
-  ArrowRight,
-  Circle,
-  ChevronDown
-} from "lucide-react";
-import { AnimatedBorderButton } from '../components/AnimatedBorderButton';
+import { ChevronDown } from "lucide-react";
+
+const particles = Array.from({ length: 30 }, () => ({
+    left: `${Math.random() * 100}%`,
+    top: `${Math.random() * 100}%`,
+    duration: `${15 + Math.random() * 30}s`,
+    delay: `${Math.random()}s`,
+}));
 
 const skills = [
     "",
@@ -44,15 +44,17 @@ export const Hero = () => {
 
         {/* Green Dots */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {[...Array(30)].map((_, i) =>(
-                <div className="absolute w-1.5 h-1.5 rounded-full opacity-60"
-                style={{
-                    backgroundColor: "#FF00A4",
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
-                    animation: `slow-drift ${15 + Math.random() * 30}s ease-in-out infinite`,
-                    animationDelay: `${Math.random() * 1}s`,
-                }}
+            {particles.map((p, i) => (
+                <div
+                    key={i}
+                    className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+                    style={{
+                        backgroundColor: "#FF00A4",
+                        left: p.left,
+                        top: p.top,
+                        animation: `slow-drift ${p.duration} ease-in-out infinite`,
+                        animationDelay: p.delay,
+                    }}
                 />
             ))}
         </div>

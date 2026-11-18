@@ -1,4 +1,4 @@
-import { ExternalLink, Award } from "lucide-react";
+import { Award } from "lucide-react";
 import { useState } from "react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
@@ -97,7 +97,7 @@ const certificates = [
 
 ];
 
-const categories = ["Todos", "IA & ML", "Python", "Dev Tools", "Evento"];
+// const categories = ["Todos", "IA & ML", "Python", "Dev Tools", "Evento"];
 
 const categoryColors = {
   "IA & ML": "text-violet-400 bg-violet-400/10 border-violet-400/20",
@@ -120,7 +120,7 @@ const issuerLogos = {
 };
 
 export const Certificates = () => {
-  const [activeCategory, setActiveCategory] = useState("Todos");
+  const [activeCategory] = useState("Todos");
   const [showAll, setShowAll] = useState(false);
 
   const filtered = activeCategory === "Todos"
