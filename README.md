@@ -1,18 +1,18 @@
-# 🌸 Esmeralda Muñoz Padilla — Portafolio Personal
+# Portafolio Personal
 
 Bienvenido/a al repositorio de mi portafolio profesional web, desarrollado con **React**, **Vite** y **Tailwind CSS**.
 
-🔗 **Sitio en vivo:** [esmemp.github.io](https://esmemp.github.io)
+**Sitio en vivo:** [esmemp.github.io](https://esmemp.github.io)
 
 ---
 
-## 👩‍💻 Sobre Mí
+## Sobre Mí
 
 Soy estudiante de **Ingeniería en Software** enfocada en **Inteligencia Artificial**, **Machine Learning**, **Data Science** y desarrollo de software integral. Me apasiona construir soluciones tecnológicas inteligentes, accesibles y con propósito.
 
 ---
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Frontend:** React 19, Vite, Tailwind CSS v4
 - **Iconos & Componentes:** Lucide React
@@ -21,7 +21,7 @@ Soy estudiante de **Ingeniería en Software** enfocada en **Inteligencia Artific
 
 ---
 
-## 📂 Secciones del Portafolio
+## Secciones del Portafolio
 
 1. **Hero:** Presentación interactiva y carrusel de habilidades técnicas.
 2. **Sobre Mí:** Trayectoria, filosofía y áreas de interés.
@@ -65,7 +65,7 @@ Soy estudiante de **Ingeniería en Software** enfocada en **Inteligencia Artific
 
 ---
 
-## 📦 Automatización y CI/CD
+## Automatización y CI/CD
 
 El proyecto cuenta con pipelines automatizados en GitHub Actions:
 
